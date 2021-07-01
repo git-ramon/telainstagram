@@ -1,0 +1,155 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.instagramfundo{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 60%;
+    height: 100vh;
+}
+
+.instagramtelefone img{
+    height: 45rem;
+}
+
+.instagramcontinue{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 50%;
+    min-width: 25rem;
+}
+
+.group{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 1px solid lightgray;
+    margin: 5px;
+}
+
+.group:nth-child(1){
+    min-height: 19rem;
+}
+
+.instagramlogo{
+    height: 8rem;
+    margin-left: 0.1rem;
+}
+
+.fotoperfil{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 2rem;
+}
+
+.fotoperfil img{
+    height: 8rem;
+}
+
+.login{
+    background-color: #0095f6;
+    color: #ffffff;
+    padding: 8px;
+    border-radius: 4px;
+
+}
+
+.logout{
+    color: #0095f6;
+    margin: 1rem;
+}
+
+.naoevoce{
+    color: rgb(160, 160, 160);
+}
+
+.linkazul{
+    color: #0095f6;
+}
+
+.baixarapp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+    margin: 0;
+}
+
+.download{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+
+}
+
+.appdownload{
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+}
+
+.appdownload:nth-child(1){
+    background-image: url('./img/app-store-botao.png');
+    border-radius: 7%;
+}
+
+.appdownload:nth-child(2){
+    background-image: url('./img/google-play-botao.png');
+}
+
+/* Responsividade */
+
+@media (max-width: 1024px){
+    .instagramfundo{
+        width: 90%;
+    }
+
+}
+
+@media (max-width: 650px){
+    body{
+        background-color: #ffffff;
+    }
+    .instagramfundo{
+        width: 90%;
+    }
+    .instagramtelefone{
+        display: none;
+    }
+    .instagramcontinue{
+        width: 100%;
+    }
+    .group{
+        border: 1px solid transparent;
+    }
+}
